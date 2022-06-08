@@ -1,0 +1,8 @@
+{
+  "users": [
+    { "username": "admin", "password": "admin" },
+    { "username": "sujoy", "password": "sujoy" },
+    { "username": "abcd", "password": "abcd" }
+  ],
+  "products": ["bamboo bottles", "bamboo jewelry", "bamboo artifacts"]
+}

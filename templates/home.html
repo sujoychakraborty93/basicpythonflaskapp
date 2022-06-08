@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Homepage{% endblock %}
+{% block content %}
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for msg in messages %}
+<p>{{msg}}</p>
+{% endfor %}
+{% endif %}
+{% endwith %}
+<h3>{{header1}}</h3>
+<p>Welcome {{usr}}</p>
+{% for x in arr %}
+<p>{{x}}</p>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<h3>{{header1}}</h3>
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for msg in messages %}
+<p>{{msg}}</p>
+{% endfor %}
+{% endif %}
+{% endwith %}
+<form action="#" method="post">
+    <p>
+        <label for="usernameid">Username</label>
+        <input type="text" id="usernameid" name="uname">
+    </p>
+    <p>
+        <label for="passwordid">Password</label>
+        <input type="password" id="passwordid" name="pswname">
+    </p>
+    <p><input type="submit" value="Login"></p>
+</form>
+<a href="/register">Register</a>
+{% endblock %}
